@@ -8,7 +8,8 @@ Rails has many more gems to post, manage the social pages. I would like to discu
 ## Posting to faceboook
 
 For managing the pages and apps in facebook, we have to create an account in the facebook.
-Signup a facebook account with http:\\facebook.com
+Signup a facebook account http://www.facebook.com
 
 
+[0]: http://www.facebook.com
 

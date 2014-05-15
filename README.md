@@ -31,7 +31,8 @@ Rails has many more gems to post, manage the social pages. I would like to discu
      https://developers.facebook.com/tools/explorer
   ```
 
-  ![alt 2-hours-fb-token](https://raw.githubusercontent.com/rdurgarao/facebook-twitter-posts-in-rails-example/social-integrations/public/facebook_images/2_hours_token_graph.png)
+  ![alt 2-hours-fb-token](https://raw.githubusercontent.com/rdurgarao/facebook-twitter-posts-in-rails-example/social-integrations/public/facebook_images/short_token.png)
+  ![alt 2-hours-fb-token](https://raw.githubusercontent.com/rdurgarao/facebook-twitter-posts-in-rails-example/social-integrations/public/facebook_images/short_token_permissions.png)
 
 #### If you need an 60 days facebook page access token
 
@@ -55,7 +56,7 @@ Rails has many more gems to post, manage the social pages. I would like to discu
 
  - It displays popup, select which page you want to manage it
 
-    ![alt manage-page-apps](https://raw.githubusercontent.com/rdurgarao/facebook-twitter-posts-in-rails-example/social-integrations/public/facebook_images/manage-page-apps.png)
+    ![alt manage-page-apps](https://raw.githubusercontent.com/rdurgarao/facebook-twitter-posts-in-rails-example/social-integrations/public/facebook_images/manage_page_apps.png)
 
  - Then you make a request to get an 60 days token
 

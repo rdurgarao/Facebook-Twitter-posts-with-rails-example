@@ -73,7 +73,10 @@ Rails has many more gems to post, manage the social pages. I would like to discu
        https://graph.facebook.com/oauth/access_token?client_id=749040378850589&client_secret=650d69481ea9deded7bddfc02816c2fb&grant_type=fb_exchange_token&fb_exchange_token=CAAKlnDxRGdcBAPFw25K59XoAF6ZBm3FpNAZABqI6mQYAudH8XCnt4ZCB0gN7vR3pahx25gu1jp9jARwfIqReUdBYfnPL8QNhso1neCfyQeRR0t4AElurhVhRo6o1bI1AFOGedb4JVDDZCCRDfBafZC6jEsqWZCdhrKTrzhpZCrBwqNkkRTNJ1RXStCnmIVfB0UZD
      ```
 
-    ![alt 60-days-token](https://raw.githubusercontent.com/rdurgarao/facebook-twitter-posts-in-rails-example/social-integrations/public/facebook_images/60-days-token.png)
+    Response should like this
+    ```ruby
+      access_token=CAAKlnDxRGdcBAI4gH2wJaFwjeeqEn3m0v1vGRlT8sP6cUKKwGp5oTokKrR8NerUw4PRSbxQltvZB6bFZBCbeEu1l0VYeraYxMZB81y24AiEapoaw7URZBe4Pz6WGL1ZCfdA1ZC8ThTK112TRvbQv7EyuJdItXH1bKtcIy2lrIV8t4Lt7lZCEgiZA&expires=5162446
+    ```
 
 #### Using Koala gem to post facebook wall posts
 

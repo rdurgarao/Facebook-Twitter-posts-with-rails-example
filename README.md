@@ -34,6 +34,7 @@ Rails has many more gems to post, manage the social pages. I would like to discu
   ```ruby
      https://www.facebook.com/dialog/pagetab?app_id=745040398850519&display=popup&next=http://www.facebook.com
   ```
+  
  - It displays popup, select which page you want to manage it.
  - then you make a request to get an 60 days token
 
@@ -54,18 +55,22 @@ Rails has many more gems to post, manage the social pages. I would like to discu
 
   - require gem into Gemfile
     ``` gem 'koala' ```
+
   - by using the access token, we pick facebook graph object from koala
+
      ```ruby
         #Picking the graph api object from kaola gem
         @graph = Koala::Facebook::API.new(@access_token)
      ```
+
   - In koala gem ,we have so many methods to manage, post to facebook.
-    ```ruby
-       #put_wall_post is method to post an article to the pages
-        post_info = @graph.put_wall_post(title, {
-        name: link_name, description: description, picture: image_url, link: page_link
-       })
-     ```
+
+      ```ruby
+         #put_wall_post is method to post an article to the pages
+          post_info = @graph.put_wall_post(title, {
+          name: link_name, description: description, picture: image_url, link: page_link
+        })
+      ```
 
 ## Example App to Start Testing Facebook Post with Koala gem
 - we spend a lot of time on posting to facebook, we think to design an app to make it easier with rails.

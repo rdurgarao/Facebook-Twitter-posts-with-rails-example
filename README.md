@@ -24,6 +24,9 @@ Rails has many more gems to post, manage the social pages. I would like to discu
   ```
 
 #### Facebook having graph explorer in facebook developers home page, from there you can get 2 hours acess token for facebook pages.
+
+- Select Application from the drop down in graph explorer tools, and select the get access token button, it prompt for permissions, select basic permissions and generate short access token.
+
   ```ruby
      https://developers.facebook.com/tools/explorer
   ```
@@ -38,7 +41,7 @@ Rails has many more gems to post, manage the social pages. I would like to discu
     ![alt create-app](https://raw.githubusercontent.com/rdurgarao/facebook-twitter-posts-in-rails-example/social-integrations/public/facebook_images/create_app.png)
     ![alt create-app-dialog](https://raw.githubusercontent.com/rdurgarao/facebook-twitter-posts-in-rails-example/social-integrations/public/facebook_images/create_app_dialog.png)
 
- - In the process of managing pages through the app, we need App ID.
+ - In the process of managing pages through the app, we need App ID & App Secret.
 
     ![alt app-id](https://raw.githubusercontent.com/rdurgarao/facebook-twitter-posts-in-rails-example/social-integrations/public/facebook_images/fb_app_id.png)
 
@@ -47,7 +50,7 @@ Rails has many more gems to post, manage the social pages. I would like to discu
     *note:* The loggedin user must be manage his own pages through dialog box.
 
   ```ruby
-     https://www.facebook.com/dialog/pagetab?app_id=745040398850519&display=popup&next=http://www.facebook.com
+     https://www.facebook.com/dialog/pagetab?app_id=746040337858519&display=popup&next=http://www.facebook.com
   ```
 
  - It displays popup, select which page you want to manage it

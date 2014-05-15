@@ -16,7 +16,7 @@ Rails has many more gems to post, manage the social pages. I would like to discu
      https://www.facebook.com/pages/create
   ```
 
-  ![alt create-page](https://github.com/rdurgarao/facebook-twitter-posts-in-rails-example/social-integrations/public/facebook_images/create_fb_page.png)
+  ![alt create-page](https://raw.githubusercontent.com/rdurgarao/facebook-twitter-posts-in-rails-example/social-integrations/public/facebook_images/create_fb_page.png)
 
   we must login to facebook developers page to get access token
   ```ruby

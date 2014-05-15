@@ -125,7 +125,7 @@ Rails has many more gems to post, manage the social pages. I would like to discu
   - Configure twitter client
 
       ```ruby
-        client = Twitter::REST::Client.new do |config|
+        @client = Twitter::REST::Client.new do |config|
           config.consumer_key        = "YOUR_CONSUMER_KEY"
           config.consumer_secret     = "YOUR_CONSUMER_SECRET"
           config.access_token        = "YOUR_ACCESS_TOKEN"
@@ -133,17 +133,12 @@ Rails has many more gems to post, manage the social pages. I would like to discu
         end
       ```
 
-  - Create twitter client object using twitter gem
-
-      ```ruby
-        @client = Twitter::Client.new
-      ```
-  - Using client object, post a tweet like
+  - Using client object, post a tweet like this
 
       ```ruby
         @client.update('First tweet')
       ```
-      *note:* Twitter accept the tweet less than 140 characters.
+      *note:* Twitter accept the tweet less than 140 characters, twitter need write permissioned access token for posting the tweet.
       for more about [Twitter methods](http://rdoc.info/gems/twitter#Usage_Examples)
 
 
@@ -186,14 +181,14 @@ Rails has many more gems to post, manage the social pages. I would like to discu
 
 - Twitter tweet
 
-  - Configure Twitter client in ` config -> initializers -> twitter.rb `
+  - Configure Twitter client in ` app -> controllers -> twitter_controller.rb -> initiliaze method config params`
 
   - Restart the server, if its already running
 
   - Make a request to ` localhost:3000 `
 
   - Placed a tweet in text area and click on tweet button
-
+    ![]()
 
   - It displays success response or else exception message
-
+    ![]()

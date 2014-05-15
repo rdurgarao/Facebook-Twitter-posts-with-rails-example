@@ -7,17 +7,17 @@ Rails has many more gems to post, manage the social pages. I would like to discu
 
 ## Posting to facebook pages
 
-For managing the pages and apps in facebook, we have to create an account in the facebook.
-Signup a facebook account with ```http://www.facebook.com```
+  For managing the pages and apps in facebook, we have to create an account in the facebook.
+  Signup a facebook account with ```http://www.facebook.com```
 
-After creating the facebook account, create a page by using this link
-  ```https://www.facebook.com/pages/create```
+  After creating the facebook account, create a page by using this link
+    ```https://www.facebook.com/pages/create```
 
-we must login to facebook developers page to get access token
-  ```https://developers.facebook.com```
+  we must login to facebook developers page to get access token
+    ```https://developers.facebook.com```
 
 ### Facebook having graph explorer in facebook developers home page, from there you can get 2 hours acess token for facebook pages.
-* ss
+  * ss
 
 ### If you need an 60 days facebook page access token
  - we need to create an facebook app
@@ -40,20 +40,20 @@ we must login to facebook developers page to get access token
 
 ### Using Koala gem to post facebook wall posts
 
-- require gem into Gemfile
-  ```gem 'koala'```
-- by using the access token, we pick facebook graph object from koala
-   ```
-   #Picking the graph api object from kaola gem
-   @graph = Koala::Facebook::API.new(@access_token)
-   ```
-- In koala gem ,we have so many methods to manage, post to facebook.
-  ```for posting to page
-     #put_wall_post is method to post an article to the pages
-         post_info = @graph.put_wall_post(title, {
-           name: link_name, description: description, picture: image_url, link: page_link
-         })
-   ```
+  - require gem into Gemfile
+    ```gem 'koala'```
+  - by using the access token, we pick facebook graph object from koala
+     ```
+     #Picking the graph api object from kaola gem
+     @graph = Koala::Facebook::API.new(@access_token)
+     ```
+  - In koala gem ,we have so many methods to manage, post to facebook.
+    ```for posting to page
+       #put_wall_post is method to post an article to the pages
+           post_info = @graph.put_wall_post(title, {
+             name: link_name, description: description, picture: image_url, link: page_link
+           })
+     ```
 
 ## Example App to Start Testing Facebook Post with Koala gem
 - we spend a lot of time on posting to facebook, we think to design an app to make it easier with rails.

@@ -28,19 +28,19 @@ Rails has many more gems to post, manage the social pages. I would like to discu
      https://developers.facebook.com/tools/explorer
   ```
 
-  ![alt 2-hours-fb-token](https://github.com/rdurgarao/facebook-twitter-posts-in-rails-example/social-integrations/public/facebook_images/2_hours_token_graph.png)
+  ![alt 2-hours-fb-token](https://raw.githubusercontent.com/rdurgarao/facebook-twitter-posts-in-rails-example/social-integrations/public/facebook_images/2_hours_token_graph.png)
 
 #### If you need an 60 days facebook page access token
 
  - We need to create an facebook app, for creating the app, go through
     `-> Apps -> Create a New App` in the facebook developers home page
 
-    ![alt create-app](https://github.com/rdurgarao/facebook-twitter-posts-in-rails-example/social-integrations/public/facebook_images/create_app.png)
-    ![alt create-app-dialog](https://github.com/rdurgarao/facebook-twitter-posts-in-rails-example/social-integrations/public/facebook_images/Create_app_dialog.png)
+    ![alt create-app](https://raw.githubusercontent.com/rdurgarao/facebook-twitter-posts-in-rails-example/social-integrations/public/facebook_images/create_app.png)
+    ![alt create-app-dialog](https://raw.githubusercontent.com/rdurgarao/facebook-twitter-posts-in-rails-example/social-integrations/public/facebook_images/create_app_dialog.png)
 
  - In the process of managing pages through the app, we need App ID.
 
-    ![alt app-id](https://github.com/rdurgarao/facebook-twitter-posts-in-rails-example/social-integrations/public/facebook_images/fb_app_id.png)
+    ![alt app-id](https://raw.githubusercontent.com/rdurgarao/facebook-twitter-posts-in-rails-example/social-integrations/public/facebook_images/fb_app_id.png)
 
  - By using the AppID, make a request to following address
 
@@ -52,7 +52,7 @@ Rails has many more gems to post, manage the social pages. I would like to discu
 
  - It displays popup, select which page you want to manage it
 
-    ![alt manage-page-apps](https://github.com/rdurgarao/facebook-twitter-posts-in-rails-example/social-integrations/public/facebook_images/manage-page-apps.png)
+    ![alt manage-page-apps](https://raw.githubusercontent.com/rdurgarao/facebook-twitter-posts-in-rails-example/social-integrations/public/facebook_images/manage-page-apps.png)
 
  - Then you make a request to get an 60 days token
 
@@ -70,7 +70,7 @@ Rails has many more gems to post, manage the social pages. I would like to discu
        https://graph.facebook.com/oauth/access_token?client_id=749040378850589&client_secret=650d69481ea9deded7bddfc02816c2fb&grant_type=fb_exchange_token&fb_exchange_token=CAAKlnDxRGdcBAPFw25K59XoAF6ZBm3FpNAZABqI6mQYAudH8XCnt4ZCB0gN7vR3pahx25gu1jp9jARwfIqReUdBYfnPL8QNhso1neCfyQeRR0t4AElurhVhRo6o1bI1AFOGedb4JVDDZCCRDfBafZC6jEsqWZCdhrKTrzhpZCrBwqNkkRTNJ1RXStCnmIVfB0UZD
      ```
 
-    ![alt 60-days-token](https://github.com/rdurgarao/facebook-twitter-posts-in-rails-example/social-integrations/public/facebook_images/60-days-token.png)
+    ![alt 60-days-token](https://raw.githubusercontent.com/rdurgarao/facebook-twitter-posts-in-rails-example/social-integrations/public/facebook_images/60-days-token.png)
 
 #### Using Koala gem to post facebook wall posts
 
@@ -110,7 +110,7 @@ Rails has many more gems to post, manage the social pages. I would like to discu
 ###### Make a request to `http://localhost:3000/social_wall_post`
 
   - It displays a form with facebook fields as shown
-    ![alt sample-fb-form](https://github.com/rdurgarao/facebook-twitter-posts-in-rails-example/social-integrations/public/facebook_images/social_wall_post_form.png)
+    ![alt sample-wallpost-form](https://raw.githubusercontent.com/rdurgarao/facebook-twitter-posts-in-rails-example/social-integrations/public/facebook_images/social_wall_post_form.png)
 
   - place an access token in the input field else configure it in facebook controller initializer block '-> app -> controllers -> facebook_controller -> initialize block'
 
@@ -127,5 +127,5 @@ Rails has many more gems to post, manage the social pages. I would like to discu
 
   - Finally, the posted article in the facebook.
 
-   ![alt posted-article](https://github.com/rdurgarao/facebook-twitter-posts-in-rails-example/social-integrations/public/facebook_images/posted_Article.png)
+   ![alt posted-article](https://raw.githubusercontent.com/rdurgarao/facebook-twitter-posts-in-rails-example/social-integrations/public/facebook_images/posted_article.png)
 

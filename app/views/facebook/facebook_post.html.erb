@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+<form action='/facebook/article' method='post'>
+  <fieldset><legend>Facebook Post</legend>
+  <input type='text' placeholder='Access token to post into facebook pages' name='access_token' /><br>
+  <input type='text' placeholder='Title is optional' name='title' required=required /><br>
+  <input type='url' placeholder='Page Link' name='page_link' /><br>
+  <input type='text' placeholder='Link Name' name='link_name'/><br>
+  <textarea type='text' placeholder='Description' name='description'></textarea><br>
+  <input type='url' placeholder='Image url' name='url'/><br>
+  <input type="submit" value = "post" />
+  </fieldset>
+</form>
+<form action='/' method='post'>
+  <fieldset><legend>Twitter Tweet</legend>
+    <input type='text' placeholder='Access token to post into facebook pages' /><br>
+    <input type='text' placeholder='Title is optional' /><br>
+    <input type='text' placeholder='Name'/><br>
+    <textarea type='text' placeholder='Description' ></textarea><br>
+    <input type='url' placeholder='Image url'/><br>
+    <input type="submit" value = "tweet" />
+  </fieldset>
+</form>
+</body>
+</html>

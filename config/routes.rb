@@ -53,4 +53,12 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+
+  #Facebook Posters
+  get 'facebook_wall_post', to: 'facebook#index'
+  post 'facebook/article', to: 'facebook#page_wall_post'
+
+  #twitter Posters
+
+
 end

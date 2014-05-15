@@ -112,6 +112,7 @@ Rails has many more gems to post, manage the social pages. I would like to discu
   - It displays a form with facebook fields as shown
 
 
+
   - place an access token in the input field else configure it in facebook controller initializer block '-> app -> controllers -> facebook_controller -> initialize block'
 
   ```ruby

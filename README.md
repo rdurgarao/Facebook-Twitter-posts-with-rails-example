@@ -101,6 +101,52 @@ Rails has many more gems to post, manage the social pages. I would like to discu
         })
       ```
 
+### Twetting to twitter pages with twitter client
+
+  - At first, we have an twitter account to manage the tweets.
+    for signup an account `https://twitter.com/signup`
+
+  - Ruby [twitter](http://sferik.github.io/twitter/) gem to manage twitter accounts
+    ``` gem 'twitter' ```
+
+  - Managing the twitter accounts using OAuth based protocol,
+    we need a privilliges to access twitter account, so for that we have to create an twitter app using [twitter developers site](https://dev.twitter.com/)
+
+    Creating Twitter App
+    ```
+      https://apps.twitter.com/app/new
+    ```
+
+  - Displaying the apps
+    ```https://apps.twitter.com/```
+
+  - Select an API Keys tab in home page of app, generate a new access token
+
+  - Configure twitter client
+
+      ```ruby
+        client = Twitter::REST::Client.new do |config|
+          config.consumer_key        = "YOUR_CONSUMER_KEY"
+          config.consumer_secret     = "YOUR_CONSUMER_SECRET"
+          config.access_token        = "YOUR_ACCESS_TOKEN"
+          config.access_token_secret = "YOUR_ACCESS_SECRET"
+        end
+      ```
+
+  - Create twitter client object using twitter gem
+
+      ```ruby
+        @client = Twitter::Client.new
+      ```
+  - Using client object, post a tweet like
+
+      ```ruby
+        @client.update('First tweet')
+      ```
+      *note:* Twitter accept the tweet less than 140 characters.
+      for more about [Twitter methods](http://rdoc.info/gems/twitter#Usage_Examples)
+
+
 ### Example App to Start Testing Facebook Post with Koala gem
 - We spend a lot of time on posting to facebook, We think to design an sample app to make it easier facebook integrations with rails.
 
@@ -110,16 +156,18 @@ Rails has many more gems to post, manage the social pages. I would like to discu
   ```
 
 #### Start the app using rails server
- - It started on rails 3000 port
+ It started on rails 3000 port
 
   ``` rails server ```
 
-###### Make a request to `http://localhost:3000/social_wall_post`
+##### Make a request to `http://localhost:3000`
 
-  - It displays a form with facebook fields as shown
+  It displays a form with facebook fields as shown
     ![alt sample-wallpost-form](https://raw.githubusercontent.com/rdurgarao/facebook-twitter-posts-in-rails-example/social-integrations/public/facebook_images/social_wall_post_form.png)
 
-  - place an access token in the input field else configure it in facebook controller initializer block '-> app -> controllers -> facebook_controller -> initialize block'
+- Facebook wall Post
+
+  - Place an access token in the input field else configure it in facebook controller initializer block '-> app -> controllers -> facebook_controller -> initialize block'
 
   ```ruby
      def initialize
@@ -135,4 +183,17 @@ Rails has many more gems to post, manage the social pages. I would like to discu
   - Finally, the posted article in the facebook.
 
    ![alt posted-article](https://raw.githubusercontent.com/rdurgarao/facebook-twitter-posts-in-rails-example/social-integrations/public/facebook_images/posted_article.png)
+
+- Twitter tweet
+
+  - Configure Twitter client in ` config -> initializers -> twitter.rb `
+
+  - Restart the server, if its already running
+
+  - Make a request to ` localhost:3000 `
+
+  - Placed a tweet in text area and click on tweet button
+
+
+  - It displays success response or else exception message
 

@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  # root 'welcome#index'
+  root 'social_posts#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
@@ -55,10 +55,10 @@ Rails.application.routes.draw do
   #   end
 
   #Facebook Posters
-  get 'social_wall_post', to: 'facebook#index'
   post 'facebook/article', to: 'facebook#page_wall_post'
 
   #twitter Posters
+  post 'twitter/tweet', to: 'twitter#tweet_post'
 
 
 end

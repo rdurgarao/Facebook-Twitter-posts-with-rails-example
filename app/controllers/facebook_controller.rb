@@ -29,8 +29,4 @@ class FacebookController < ApplicationController
 
     render text: success_msg
   end
-
-  def index
-    render 'facebook_post.html.erb'
-  end
 end

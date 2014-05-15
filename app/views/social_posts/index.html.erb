@@ -15,13 +15,9 @@
   <input type="submit" value = "post" />
   </fieldset>
 </form>
-<form action='/' method='post'>
+<form action='/twitter/tweet' method='post'>
   <fieldset><legend>Twitter Tweet</legend>
-    <input type='text' placeholder='Access token to post into facebook pages' /><br>
-    <input type='text' placeholder='Title is optional' /><br>
-    <input type='text' placeholder='Name'/><br>
-    <textarea type='text' placeholder='Description' ></textarea><br>
-    <input type='url' placeholder='Image url'/><br>
+    <textarea type='text' placeholder='Tweet to post ...' name='tweet' required=required ></textarea><br>
     <input type="submit" value = "tweet" />
   </fieldset>
 </form>

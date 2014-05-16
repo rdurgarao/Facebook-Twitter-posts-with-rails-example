@@ -124,6 +124,7 @@ Rails has many more gems to post, manage the social pages. I would like to discu
   - Select an API Keys tab in home page of app, generate a new access token
 
   - Configure twitter client
+
     ```ruby
       @client = Twitter::REST::Client.new do |config|
         config.consumer_key        = "YOUR_CONSUMER_KEY"

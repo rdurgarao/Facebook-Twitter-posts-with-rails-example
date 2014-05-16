@@ -178,7 +178,7 @@ Rails has many more gems to post, manage the social pages. I would like to discu
   - Post your article by clicking on post button
 
   - After succesfull posting an article, you get success response, else exception thrown by facebook or koala gem
-    More about [exceptions](http://rubydoc.info/gems/koala/1.9.0/Koala/Facebook/APIError)
+    , More about [exceptions](http://rubydoc.info/gems/koala/1.9.0/Koala/Facebook/APIError)
 
   - Finally, the posted article in the facebook.
 

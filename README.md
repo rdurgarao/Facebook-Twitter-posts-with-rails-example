@@ -210,4 +210,4 @@ Rails has many more gems to post, manage the social pages. I would like to discu
 
   - Tweeted message is like this
 
-    ![alt tweet-posted](https://raw.githubusercontent.com/rdurgarao/facebook-twitter-posts-in-rails-example/master/public/facebook_images/tweet_response.png)
+    ![alt tweet-posted](https://raw.githubusercontent.com/rdurgarao/facebook-twitter-posts-in-rails-example/social-integrations/public/facebook_images/tweet_response.png)

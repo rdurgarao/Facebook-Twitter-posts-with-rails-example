@@ -1,4 +1,4 @@
-facebook-twitter-posts-with-rails-example
+Facebook-Twitter-posts-with-rails-example
 =======================================
 
 This example is concentrating more on twitter and facebook integrations with rails.

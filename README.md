@@ -157,12 +157,13 @@ Rails has many more gems to post, manage the social pages. I would like to discu
 
 ##### Make a request to `http://localhost:3000`
 
-  It displays a form with facebook fields as shown
-    ![alt sample-wallpost-form](https://raw.githubusercontent.com/rdurgarao/facebook-twitter-posts-in-rails-example/social-integrations/public/facebook_images/social_wall_post_form.png)
 
 - Facebook wall Post
 
-  - Place an access token in the input field else configure it in facebook controller initializer block '-> app -> controllers -> facebook_controller -> initialize block'
+  - It displays a form with facebook fields as shown
+    ![alt sample-wallpost-form](https://raw.githubusercontent.com/rdurgarao/facebook-twitter-posts-in-rails-example/social-integrations/public/facebook_images/social_wall_post_form.png)
+
+  - Place an access token in the input field, else configure it in facebook controller initializer block '-> app -> controllers -> facebook_controller -> initialize block'
 
   ```ruby
      def initialize
@@ -172,23 +173,35 @@ Rails has many more gems to post, manage the social pages. I would like to discu
   ```
   - Post your article by clicking on post button
 
-  - After succesfull posting an article, you get success response else exception thrown by facebook or koala gem
+  - After succesfull posting an article, you get success response, else exception thrown by facebook or koala gem
     More about [exceptions](http://rubydoc.info/gems/koala/1.9.0/Koala/Facebook/APIError)
 
   - Finally, the posted article in the facebook.
 
    ![alt posted-article](https://raw.githubusercontent.com/rdurgarao/facebook-twitter-posts-in-rails-example/social-integrations/public/facebook_images/posted_article.png)
 
+
 - Twitter tweet
 
   - Configure Twitter client in ` app -> controllers -> twitter_controller.rb -> initiliaze method config params`
+
+    ```ruby
+      @client = Twitter::REST::Client.new do |config|
+            config.consumer_key = "ZKMBsV5ETf1erkMYdywTg"
+            config.consumer_secret = "TsA0p3PWLcxc7CVmNBHJbhsOaeKs13BygsONgDQeM"
+            config.access_token = "1835423847-psdbfLDsvjvBsApR3t0WvRI28C7QgStgeFabaHi"
+            config.access_token_secret = "66aqNIqsFTlgDKRTdh0ZHrSKrplQKdjKMBodcsXzkGASU"
+          end
+    ```
 
   - Restart the server, if its already running
 
   - Make a request to ` localhost:3000 `
 
   - Placed a tweet in text area and click on tweet button
-    ![]()
+    ![alt tweet-article](https://raw.githubusercontent.com/rdurgarao/facebook-twitter-posts-in-rails-example/master/public/facebook_images/tweet_view.png)
 
   - It displays success response or else exception message
-    ![]()
+
+  - Tweeted message is like this
+    ![alt tweet-posted](https://raw.githubusercontent.com/rdurgarao/facebook-twitter-posts-in-rails-example/master/public/facebook_images/tweet_response.png)

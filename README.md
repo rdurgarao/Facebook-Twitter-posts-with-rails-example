@@ -167,7 +167,7 @@ Rails has many more gems to post, manage the social pages. I would like to discu
   - It displays a form with facebook fields as shown
     ![alt sample-wallpost-form](https://raw.githubusercontent.com/rdurgarao/facebook-twitter-posts-in-rails-example/social-integrations/public/facebook_images/social_wall_post_form.png)
 
-  - Place an access token in the input field, else configure it in facebook controller initializer block '-> app -> controllers -> facebook_controller -> initialize block'
+  - Place an access token in the input field, else configure it in facebook controller initializer block ` -> app -> controllers -> facebook_controller -> initialize block `
 
   ```ruby
      def initialize

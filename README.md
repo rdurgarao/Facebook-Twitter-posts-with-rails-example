@@ -106,8 +106,11 @@ Rails has many more gems to post, manage the social pages. I would like to discu
   - At first, we have an twitter account to manage the tweets.
     for signup an account `https://twitter.com/signup`
 
-  - Ruby [twitter](http://sferik.github.io/twitter/) gem to manage twitter accounts
-    ``` gem 'twitter' ```
+  - Ruby [twitter](http://sferik.github.io/twitter/) gem to manage twitter accounts, require in Gemfile
+  
+    ```ruby
+     gem 'twitter'
+    ```
 
   - Managing the twitter accounts using OAuth based protocol,
     we need a privilliges to access twitter account, so for that we have to create an twitter app using [twitter developers site](https://dev.twitter.com/)

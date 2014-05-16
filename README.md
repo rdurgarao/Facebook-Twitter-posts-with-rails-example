@@ -83,7 +83,9 @@ Rails has many more gems to post, manage the social pages. I would like to discu
 
   - Require [koala](https://github.com/arsduo/koala) gem into Gemfile
 
-    ``` gem 'koala' ```
+    ```ruby
+     gem 'koala'
+    ```
 
   - By using the access token, we pick facebook graph object from koala
 
@@ -107,7 +109,7 @@ Rails has many more gems to post, manage the social pages. I would like to discu
     for signup an account `https://twitter.com/signup`
 
   - Ruby [twitter](http://sferik.github.io/twitter/) gem to manage twitter accounts, require in Gemfile
-  
+
     ```ruby
      gem 'twitter'
     ```

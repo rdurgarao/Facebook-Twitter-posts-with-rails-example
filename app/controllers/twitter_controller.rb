@@ -3,10 +3,10 @@ class TwitterController < ApplicationController
 
   def initialize
     @client = Twitter::REST::Client.new do |config|
-      config.consumer_key = "ZKEBLV5EOf1ZrkMYdywTg"
-      config.consumer_secret = "TSA0p3PWLcxc7CVmNBHJbhtOaeKY13BygzONgDQeM"
-      config.access_token = "1885443847-psGbfLD1vjvBsApR3N0WvRI28C7QgSggeFabaHi"
-      config.access_token_secret = "66aqNIq1FTlgDKRTRh0ZHrSKrplQK4jKMBoKcsXzkGASU"
+      config.consumer_key = "xx"
+      config.consumer_secret = "xx"
+      config.access_token = "xx-xx"
+      config.access_token_secret = "xx"
     end
   end
 

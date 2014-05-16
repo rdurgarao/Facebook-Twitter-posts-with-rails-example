@@ -119,7 +119,10 @@ Rails has many more gems to post, manage the social pages. I would like to discu
     ```
 
   - Displaying the apps
-    ```https://apps.twitter.com/```
+
+    ```
+    https://apps.twitter.com/
+    ```
 
   - Select an API Keys tab in home page of app, generate a new access token
 

@@ -113,6 +113,7 @@ Rails has many more gems to post, manage the social pages. I would like to discu
     we need a privilliges to access twitter account, so for that we have to create an twitter app using [twitter developers site](https://dev.twitter.com/)
 
     Creating Twitter App
+
     ```
       https://apps.twitter.com/app/new
     ```
@@ -123,23 +124,22 @@ Rails has many more gems to post, manage the social pages. I would like to discu
   - Select an API Keys tab in home page of app, generate a new access token
 
   - Configure twitter client
-
-      ```ruby
-        @client = Twitter::REST::Client.new do |config|
-          config.consumer_key        = "YOUR_CONSUMER_KEY"
-          config.consumer_secret     = "YOUR_CONSUMER_SECRET"
-          config.access_token        = "YOUR_ACCESS_TOKEN"
-          config.access_token_secret = "YOUR_ACCESS_SECRET"
-        end
-      ```
+    ```ruby
+      @client = Twitter::REST::Client.new do |config|
+        config.consumer_key        = "YOUR_CONSUMER_KEY"
+        config.consumer_secret     = "YOUR_CONSUMER_SECRET"
+        config.access_token        = "YOUR_ACCESS_TOKEN"
+        config.access_token_secret = "YOUR_ACCESS_SECRET"
+      end
+    ```
 
   - Using client object, post a tweet like this
 
-      ```ruby
-        @client.update('First tweet')
-      ```
-      *note:* Twitter accept the tweet less than 140 characters, twitter need write permissioned access token for posting the tweet.
-      for more about [Twitter methods](http://rdoc.info/gems/twitter#Usage_Examples)
+    ```ruby
+      @client.update('First tweet')
+    ```
+    *note:* Twitter accept the tweet less than 140 characters, twitter need write permissioned access token for posting the tweet.
+    for more about [Twitter methods](http://rdoc.info/gems/twitter#Usage_Examples)
 
 
 ### Example App to Start Testing Facebook Post with Koala gem
@@ -191,17 +191,19 @@ Rails has many more gems to post, manage the social pages. I would like to discu
             config.consumer_secret = "TsA0p3PWLcxc7CVmNBHJbhsOaeKs13BygsONgDQeM"
             config.access_token = "1835423847-psdbfLDsvjvBsApR3t0WvRI28C7QgStgeFabaHi"
             config.access_token_secret = "66aqNIqsFTlgDKRTdh0ZHrSKrplQKdjKMBodcsXzkGASU"
-          end
+      end
     ```
 
   - Restart the server, if its already running
 
-  - Make a request to ` localhost:3000 `
+  - Make a request to `localhost:3000`
 
   - Placed a tweet in text area and click on tweet button
+
     ![alt tweet-article](https://raw.githubusercontent.com/rdurgarao/facebook-twitter-posts-in-rails-example/master/public/facebook_images/tweet_view.png)
 
   - It displays success response or else exception message
 
   - Tweeted message is like this
+
     ![alt tweet-posted](https://raw.githubusercontent.com/rdurgarao/facebook-twitter-posts-in-rails-example/master/public/facebook_images/tweet_response.png)

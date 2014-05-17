@@ -32,8 +32,13 @@ Rails has many more gems to post, manage the social pages. I would like to discu
   ```
 
   ![alt 2-hours-fb-token](https://raw.githubusercontent.com/rdurgarao/Facebook-Twitter-posts-with-rails-example/master/public/facebook_images/facebook_short_token.png)
-  ![alt fb-debug-token](https://raw.githubusercontent.com/rdurgarao/Facebook-Twitter-posts-with-rails-example/master/public/facebook_images/short_lived_debug_token.png)
+
   ![alt fb-short-permissions](https://raw.githubusercontent.com/rdurgarao/facebook-twitter-posts-in-rails-example/social-integrations/public/facebook_images/short_token_permissions.png)
+
+- Facebook provides debug token explorer, it displays info about Access Token, Open Graph Id.
+  more about [Debugger Tool](https://developers.facebook.com/tools/debug/)
+
+  ![alt fb-debug-token](https://raw.githubusercontent.com/rdurgarao/Facebook-Twitter-posts-with-rails-example/master/public/facebook_images/short_lived_debug_token.png)
 
 #### If you need an 60 days facebook page access token
 

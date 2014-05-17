@@ -2,7 +2,7 @@ class FacebookController < ApplicationController
 
   def initialize
     #specify access_token here
-    @access_token = 'CAAFRvK2u6NkBABYSEWU3uUn05JvriRzKshb412ZBNqej8R3G8d4LiYE6BS2dsDJ9M3FY2p1T1lZCVRvqemZCouX33nGhbdNPX6bipyzy4FoqtEgp2WhZC388m5FUHZAT6AMQR9PuZCtIG6tKGvuyryOOl59SUKmMuqiQQKpjFya3EaXGfNzGGe'
+    @access_token = 'X'
     #Picking the graph api object from kaola gem
     @graph = Koala::Facebook::API.new(@access_token)
   end
@@ -39,6 +39,8 @@ class FacebookController < ApplicationController
         posts.each do |post|
           @graph.delete_object(post["post_id"])
         end
+        puts 'sleeping ... 120 seconds'
+        sleep 120
       end
     rescue Exception => e
       message = e.message

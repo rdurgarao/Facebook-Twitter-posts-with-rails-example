@@ -56,6 +56,7 @@ Rails.application.routes.draw do
 
   #Facebook Posters
   post 'facebook/article', to: 'facebook#page_wall_post'
+  get 'facebook/delete/posts', to: 'facebook#delete_page_wall_posts'
 
   #twitter Posters
   post 'twitter/tweet', to: 'twitter#tweet_post'

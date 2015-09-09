@@ -222,3 +222,29 @@ Rails has many more gems to post, manage the social pages. I would like to discu
   - Tweeted message is like this
 
     ![alt tweet-posted](https://raw.githubusercontent.com/rdurgarao/facebook-twitter-posts-in-rails-example/social-integrations/public/facebook_images/tweet_response.png)
+
+- Facebook App verification
+
+  - If you need to verify facebook application, follow these steps to get verified
+
+  - Confirm your application is verified or not, with green circle in App Dashboard page, looks like
+
+    ![alt fbapp-dashboard](https://raw.githubusercontent.com/rdurgarao/facebook-twitter-posts-in-rails-example/social-integrations/public/facebook_images/fb_app_dashboard.png)
+
+  - Enable the verification of Facebook App using follow steps
+
+    - Check App status
+
+    ![alt fbapp-not-verified](https://raw.githubusercontent.com/rdurgarao/facebook-twitter-posts-in-rails-example/social-integrations/public/facebook_images/app_not_verified.png)
+
+    - Add your contact email to get verified
+
+    ![alt verified-fb-app-contact](https://raw.githubusercontent.com/rdurgarao/facebook-twitter-posts-in-rails-example/social-integrations/public/facebook_images/add_contact_fb.png)
+
+    - Now, Enable the app
+
+    ![alt verified-fb-app](https://raw.githubusercontent.com/rdurgarao/facebook-twitter-posts-in-rails-example/social-integrations/public/facebook_images/app_verified_step.png)
+
+    - Finally App is verified
+
+    ![alt fb-app-confirmed](https://raw.githubusercontent.com/rdurgarao/facebook-twitter-posts-in-rails-example/social-integrations/public/facebook_images/app_confirmed_step.png)

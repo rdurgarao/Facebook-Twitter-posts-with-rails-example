@@ -16,7 +16,7 @@ Rails has many more gems to post, manage the social pages. I would like to discu
      https://www.facebook.com/pages/create
   ```
 
-  ![alt create-page](https://raw.githubusercontent.com/rdurgarao/facebook-twitter-posts-in-rails-example/social-integrations/public/facebook_images/create_fb_page.png)
+  ![alt create-page](https://raw.githubusercontent.com/rdurgarao/facebook-twitter-posts-in-rails-example/master/public/facebook_images/create_fb_page.png)
 
   we must login to facebook developers page to get access token
   ```ruby
@@ -33,7 +33,7 @@ Rails has many more gems to post, manage the social pages. I would like to discu
 
   ![alt 2-hours-fb-token](https://raw.githubusercontent.com/rdurgarao/Facebook-Twitter-posts-with-rails-example/master/public/facebook_images/facebook_short_token.png)
 
-  ![alt fb-short-permissions](https://raw.githubusercontent.com/rdurgarao/facebook-twitter-posts-in-rails-example/social-integrations/public/facebook_images/short_token_permissions.png)
+  ![alt fb-short-permissions](https://raw.githubusercontent.com/rdurgarao/facebook-twitter-posts-in-rails-example/master/public/facebook_images/short_token_permissions.png)
 
 - Facebook provides debug token explorer, it displays info about Access Token, Open Graph Id.
   more about [Debugger Tool](https://developers.facebook.com/tools/debug/)
@@ -45,12 +45,12 @@ Rails has many more gems to post, manage the social pages. I would like to discu
  - We need to create an facebook app, for creating the app, go through
     `-> Apps -> Create a New App` in the facebook developers home page
 
-    ![alt create-app](https://raw.githubusercontent.com/rdurgarao/facebook-twitter-posts-in-rails-example/social-integrations/public/facebook_images/create_app.png)
-    ![alt create-app-dialog](https://raw.githubusercontent.com/rdurgarao/facebook-twitter-posts-in-rails-example/social-integrations/public/facebook_images/create_app_dialog.png)
+    ![alt create-app](https://raw.githubusercontent.com/rdurgarao/facebook-twitter-posts-in-rails-example/master/public/facebook_images/create_app.png)
+    ![alt create-app-dialog](https://raw.githubusercontent.com/rdurgarao/facebook-twitter-posts-in-rails-example/master/public/facebook_images/create_app_dialog.png)
 
  - In the process of managing pages through the app, we need App ID & App Secret.
 
-    ![alt app-id](https://raw.githubusercontent.com/rdurgarao/facebook-twitter-posts-in-rails-example/social-integrations/public/facebook_images/fb_app_id.png)
+    ![alt app-id](https://raw.githubusercontent.com/rdurgarao/facebook-twitter-posts-in-rails-example/master/public/facebook_images/fb_app_id.png)
 
  - By using the AppID, make a request to following address
 
@@ -62,7 +62,7 @@ Rails has many more gems to post, manage the social pages. I would like to discu
 
  - It displays popup, select which page you want to manage it
 
-    ![alt manage-page-apps](https://raw.githubusercontent.com/rdurgarao/facebook-twitter-posts-in-rails-example/social-integrations/public/facebook_images/manage_page_apps.png)
+    ![alt manage-page-apps](https://raw.githubusercontent.com/rdurgarao/facebook-twitter-posts-in-rails-example/master/public/facebook_images/manage_page_apps.png)
 
  - Then you make a request to get an 60 days token
 
@@ -176,7 +176,7 @@ Rails has many more gems to post, manage the social pages. I would like to discu
 - Facebook wall Post
 
   - It displays a form with facebook fields as shown
-    ![alt sample-wallpost-form](https://raw.githubusercontent.com/rdurgarao/facebook-twitter-posts-in-rails-example/social-integrations/public/facebook_images/social_wall_post_form.png)
+    ![alt sample-wallpost-form](https://raw.githubusercontent.com/rdurgarao/facebook-twitter-posts-in-rails-example/master/public/facebook_images/social_wall_post_form.png)
 
   - Place an access token in the input field, else configure it in facebook controller initializer block ` -> app -> controllers -> facebook_controller -> initialize block `
 
@@ -193,7 +193,7 @@ Rails has many more gems to post, manage the social pages. I would like to discu
 
   - Finally, the posted article in the facebook.
 
-   ![alt posted-article](https://raw.githubusercontent.com/rdurgarao/facebook-twitter-posts-in-rails-example/social-integrations/public/facebook_images/posted_article.png)
+   ![alt posted-article](https://raw.githubusercontent.com/rdurgarao/facebook-twitter-posts-in-rails-example/master/public/facebook_images/posted_article.png)
 
 
 - Twitter tweet
@@ -221,7 +221,7 @@ Rails has many more gems to post, manage the social pages. I would like to discu
 
   - Tweeted message is like this
 
-    ![alt tweet-posted](https://raw.githubusercontent.com/rdurgarao/facebook-twitter-posts-in-rails-example/social-integrations/public/facebook_images/tweet_response.png)
+    ![alt tweet-posted](https://raw.githubusercontent.com/rdurgarao/facebook-twitter-posts-in-rails-example/master/public/facebook_images/tweet_response.png)
 
 - Facebook App verification
 
@@ -229,22 +229,22 @@ Rails has many more gems to post, manage the social pages. I would like to discu
 
   - Confirm your application is verified or not, with green circle in App Dashboard page, looks like
 
-    ![alt fbapp-dashboard](https://raw.githubusercontent.com/rdurgarao/facebook-twitter-posts-in-rails-example/social-integrations/public/facebook_images/fb_app_dashboard.png)
+    ![alt fbapp-dashboard](https://raw.githubusercontent.com/rdurgarao/facebook-twitter-posts-in-rails-example/master/public/facebook_images/fb_app_dashboard.png)
 
   - Enable the verification of Facebook App using follow steps
 
     - Check App status
 
-    ![alt fbapp-not-verified](https://raw.githubusercontent.com/rdurgarao/facebook-twitter-posts-in-rails-example/social-integrations/public/facebook_images/app_not_verified.png)
+    ![alt fbapp-not-verified](https://raw.githubusercontent.com/rdurgarao/facebook-twitter-posts-in-rails-example/master/public/facebook_images/app_not_verified.png)
 
     - Add your contact email to get verified
 
-    ![alt verified-fb-app-contact](https://raw.githubusercontent.com/rdurgarao/facebook-twitter-posts-in-rails-example/social-integrations/public/facebook_images/add_contact_fb.png)
+    ![alt verified-fb-app-contact](https://raw.githubusercontent.com/rdurgarao/facebook-twitter-posts-in-rails-example/master/public/facebook_images/add_contact_fb.png)
 
     - Now, Enable the app
 
-    ![alt verified-fb-app](https://raw.githubusercontent.com/rdurgarao/facebook-twitter-posts-in-rails-example/social-integrations/public/facebook_images/app_verified_step.png)
+    ![alt verified-fb-app](https://raw.githubusercontent.com/rdurgarao/facebook-twitter-posts-in-rails-example/master/public/facebook_images/app_verified_step.png)
 
     - Finally App is verified
 
-    ![alt fb-app-confirmed](https://raw.githubusercontent.com/rdurgarao/facebook-twitter-posts-in-rails-example/social-integrations/public/facebook_images/app_confirmed_step.png)
+    ![alt fb-app-confirmed](https://raw.githubusercontent.com/rdurgarao/facebook-twitter-posts-in-rails-example/master/public/facebook_images/app_confirmed_step.png)

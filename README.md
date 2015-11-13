@@ -1,5 +1,6 @@
 Facebook-Twitter-posts-with-rails-example
 =======================================
+![rails](https://img.shields.io/badge/rails-4.1-green.svg)
 
 This example is concentrating more on twitter and facebook integrations with rails.
 
